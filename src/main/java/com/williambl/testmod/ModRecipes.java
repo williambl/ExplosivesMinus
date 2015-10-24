@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModRecipes {
 	public static void addRecipes()
 	{
-		GameRegistry.addRecipe(new ItemStack(Blocks.obsidian),
+		GameRegistry.addRecipe(new ItemStack(Blocks.log2, 1, 13),
 				"AAA",
 				"AAA",
 				"AAA",
@@ -16,9 +16,9 @@ public class ModRecipes {
 		GameRegistry.addRecipe(new ItemStack(Items.apple, 4),
 				"AA",
 				"AA",
-				'A', Blocks.cobblestone);
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.bedrock), Items.diamond, Items.lava_bucket, Blocks.iron_block);
-		GameRegistry.addSmelting(Blocks.obsidian, new ItemStack(Items.diamond, 2), 1F);
+				'A', Blocks.leaves);
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.skull, 1, 2), Items.rotten_flesh, Items.ender_pearl);
+		GameRegistry.addSmelting(Blocks.glowstone, new ItemStack(Items.glowstone_dust, 4), 1F);
 
 	}
 
